@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preconception Care Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    #quiz-container input[type='radio'] { margin-right: 5px; }
+    .question { margin-bottom: 20px; }
+    #timer { font-size: 1.2em; font-weight: bold; color: red; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Preconception Care – Timed Quiz</h1>
+  <p>This quiz has a time limit of <strong>30 minutes</strong>. It will auto-submit when time is up.</p>
+  <div id="timer">Time Left: <span id="time">30:00</span></div>
+  <form id="quiz-form">
+<div class='question'><p><strong>1. What is the main purpose of preconception care?</strong></p>
+<label><input type='radio' name='q1' id='q1_opt0' value='To reduce family size'> To reduce family size</label><br>
+<label><input type='radio' name='q1' id='q1_opt1' value='To treat pregnancy complications'> To treat pregnancy complications</label><br>
+<label><input type='radio' name='q1' id='q1_opt2' value='To improve maternal and child health outcomes'> To improve maternal and child health outcomes</label><br>
+<label><input type='radio' name='q1' id='q1_opt3' value='To prevent childbirth pain'> To prevent childbirth pain</label><br>
+</div>
+<div class='question'><p><strong>2. When should preconception care ideally begin?</strong></p>
+<label><input type='radio' name='q2' id='q2_opt0' value='After the first trimester'> After the first trimester</label><br>
+<label><input type='radio' name='q2' id='q2_opt1' value='One year after delivery'> One year after delivery</label><br>
+<label><input type='radio' name='q2' id='q2_opt2' value='During labor'> During labor</label><br>
+<label><input type='radio' name='q2' id='q2_opt3' value='1 to 3 years before pregnancy'> 1 to 3 years before pregnancy</label><br>
+</div>
+<div class='question'><p><strong>3. Which of these professionals can provide preconception care?</strong></p>
+<label><input type='radio' name='q3' id='q3_opt0' value='Dentist'> Dentist</label><br>
+<label><input type='radio' name='q3' id='q3_opt1' value='Family doctor'> Family doctor</label><br>
+<label><input type='radio' name='q3' id='q3_opt2' value='Pediatrician'> Pediatrician</label><br>
+<label><input type='radio' name='q3' id='q3_opt3' value='Dermatologist'> Dermatologist</label><br>
+</div>
+<div class='question'><p><strong>4. What is the recommended daily dose of folic acid before pregnancy?</strong></p>
+<label><input type='radio' name='q4' id='q4_opt0' value='100 mcg'> 100 mcg</label><br>
+<label><input type='radio' name='q4' id='q4_opt1' value='200 mcg'> 200 mcg</label><br>
+<label><input type='radio' name='q4' id='q4_opt2' value='400 mcg'> 400 mcg</label><br>
+<label><input type='radio' name='q4' id='q4_opt3' value='800 mcg'> 800 mcg</label><br>
+</div>
+<div class='question'><p><strong>5. Which nutrient helps prevent neural tube defects?</strong></p>
+<label><input type='radio' name='q5' id='q5_opt0' value='Calcium'> Calcium</label><br>
+<label><input type='radio' name='q5' id='q5_opt1' value='Iron'> Iron</label><br>
+<label><input type='radio' name='q5' id='q5_opt2' value='Folic acid'> Folic acid</label><br>
+<label><input type='radio' name='q5' id='q5_opt3' value='Zinc'> Zinc</label><br>
+</div>
+<div class='question'><p><strong>6. What is the ideal BMI range for women before conception?</strong></p>
+<label><input type='radio' name='q6' id='q6_opt0' value='10–19.9'> 10–19.9</label><br>
+<label><input type='radio' name='q6' id='q6_opt1' value='20–24.9'> 20–24.9</label><br>
+<label><input type='radio' name='q6' id='q6_opt2' value='25–29.9'> 25–29.9</label><br>
+<label><input type='radio' name='q6' id='q6_opt3' value='30–35'> 30–35</label><br>
+</div>
+<div class='question'><p><strong>7. What test checks for syphilis during a preconception visit?</strong></p>
+<label><input type='radio' name='q7' id='q7_opt0' value='HIV test'> HIV test</label><br>
+<label><input type='radio' name='q7' id='q7_opt1' value='Pap smear'> Pap smear</label><br>
+<label><input type='radio' name='q7' id='q7_opt2' value='VDRL'> VDRL</label><br>
+<label><input type='radio' name='q7' id='q7_opt3' value='HVS'> HVS</label><br>
+</div>
+<div class='question'><p><strong>8. Which vitamin, in excess, is teratogenic and can cause birth defects?</strong></p>
+<label><input type='radio' name='q8' id='q8_opt0' value='Vitamin C'> Vitamin C</label><br>
+<label><input type='radio' name='q8' id='q8_opt1' value='Vitamin D'> Vitamin D</label><br>
+<label><input type='radio' name='q8' id='q8_opt2' value='Vitamin A'> Vitamin A</label><br>
+<label><input type='radio' name='q8' id='q8_opt3' value='Vitamin B12'> Vitamin B12</label><br>
+</div>
+<div class='question'><p><strong>9. Which of the following is a major component of preconception care?</strong></p>
+<label><input type='radio' name='q9' id='q9_opt0' value='Cancer screening'> Cancer screening</label><br>
+<label><input type='radio' name='q9' id='q9_opt1' value='Drug detox therapy'> Drug detox therapy</label><br>
+<label><input type='radio' name='q9' id='q9_opt2' value='Nutrition assessment'> Nutrition assessment</label><br>
+<label><input type='radio' name='q9' id='q9_opt3' value='Infant care'> Infant care</label><br>
+</div>
+<div class='question'><p><strong>10. What condition must be controlled in phenylketonuria before conception?</strong></p>
+<label><input type='radio' name='q10' id='q10_opt0' value='Glucose'> Glucose</label><br>
+<label><input type='radio' name='q10' id='q10_opt1' value='Phenylalanine'> Phenylalanine</label><br>
+<label><input type='radio' name='q10' id='q10_opt2' value='Iron'> Iron</label><br>
+<label><input type='radio' name='q10' id='q10_opt3' value='Estrogen'> Estrogen</label><br>
+</div>
+
+    <button type="submit">Submit Quiz</button>
+  </form>
+
+  <script>
+    let timeLeft = 1800;
+    const timerElement = document.getElementById('time');
+    const interval = setInterval(() => {
+      let minutes = Math.floor(timeLeft / 60);
+      let seconds = timeLeft % 60;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+      timerElement.textContent = `${minutes}:${seconds}`;
+      if (timeLeft <= 0) {
+        clearInterval(interval);
+        alert('Time is up! Submitting quiz.');
+        document.getElementById('quiz-form').submit();
+      }
+      timeLeft--;
+    }, 1000);
+
+    document.getElementById('quiz-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Quiz submitted successfully! (Note: This version does not save responses.)');
+    });
+  </script>
+</body>
+</html>
